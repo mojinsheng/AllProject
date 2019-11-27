@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">神州行</string>
+    <string name="text_index">首页</string>
+    <string name="text_app">应用管理</string>
+    <string name="text_setting">设置</string>
+    <string name="text_my">我的</string>
+</resources>
