@@ -77,7 +77,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends RxAppCompatA
         // 把actvity放到application栈中管理
         AppManager.getAppManager().addActivity(this);
         // 无标题
-       requestWindowFeature(Window.FEATURE_NO_TITLE);
+     //  requestWindowFeature(Window.FEATURE_NO_TITLE);
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         // 设置竖屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

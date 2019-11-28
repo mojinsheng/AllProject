@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="true"
-    android:fitsSystemWindows="true"
-    android:background="@color/color_main_bg">
+    android:fitsSystemWindows="true">
 
 
 
@@ -27,7 +26,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="0dp"
             android:scaleType="fitCenter"
-            app:srcCompat="@mipmap/app_title" />
+            app:srcCompat="@mipmap/login_bg" />
     </LinearLayout>
     <!--<RelativeLayout-->
         <!--android:id="@+id/re_address"-->

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_sub_background">
+    android:layout_height="match_parent">
 
     <android.support.constraint.Guideline
         android:id="@+id/uc_guideline"
@@ -68,7 +67,7 @@
                android:layout_width="100dp"
                android:layout_height="100dp"
                android:layout_centerInParent="true"
-               android:src="@mipmap/bg_personal_img"
+               android:src="@mipmap/login_bg"
                app:is_circle="true" />
            <TextView
                android:id="@+id/text_phone"
@@ -95,7 +94,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="3dp"
-        app:srcCompat="@mipmap/person_setting"
+        app:srcCompat="@mipmap/home_setting"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toEndOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
@@ -123,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/person_up" />
+            />
 
 
     </RelativeLayout>
@@ -145,7 +144,6 @@
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:padding="3dp"
-        app:srcCompat="@mipmap/person_aboutus"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toEndOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/uc_line1"
@@ -174,7 +172,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
-            android:src="@mipmap/person_up" />
+ />
 
 
     </RelativeLayout>
@@ -196,7 +194,6 @@
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:padding="3dp"
-        app:srcCompat="@mipmap/person_verson"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toEndOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/uc_line2"
@@ -224,8 +221,7 @@
             android:id="@+id/iv_arrow4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:src="@mipmap/person_up" />
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
     <ImageView
         android:id="@+id/uc_line3"

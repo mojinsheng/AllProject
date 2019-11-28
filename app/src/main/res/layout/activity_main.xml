@@ -13,7 +13,6 @@
         android:id="@+id/main_fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/color_text_shopping_car_bg"
         android:clipToPadding="true"
         android:fitsSystemWindows="true"
         app:layout_constraintBottom_toTopOf="@id/main_line"
@@ -24,7 +23,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:background="@color/color_white"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +45,7 @@
                 android:layout_width="40dp"
                 android:layout_height="43dp"
                 android:gravity="center"
-                android:src="@drawable/main_monitor"/>
+                android:src="@mipmap/home_menu"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -74,7 +73,7 @@
                 android:layout_width="40dp"
                 android:layout_height="43dp"
                 android:gravity="center"
-                android:src="@drawable/main_monitor"/>
+                android:src="@mipmap/home_app"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -101,7 +100,7 @@
                 android:layout_width="40dp"
                 android:layout_height="43dp"
                 android:gravity="center"
-                android:src="@drawable/main_monitor"/>
+                android:src="@mipmap/home_setting"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,7 +126,7 @@
                 android:layout_width="40dp"
                 android:layout_height="43dp"
                 android:gravity="center"
-                android:src="@drawable/main_monitor"/>
+                android:src="@mipmap/home_person"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,6 +147,6 @@
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@color/color_sub_line" />
+        app:srcCompat="@color/color_main_gary" />
 
 </android.support.constraint.ConstraintLayout>
