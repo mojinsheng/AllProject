@@ -38,6 +38,7 @@ public class LoginActivity extends BaseTitleActivity  {
                 case R.id.btn_login :
 
                     startActivity(MainActivity.class);
+                    finish();
                     break;
             }
     }
