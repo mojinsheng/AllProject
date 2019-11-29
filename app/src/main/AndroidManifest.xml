@@ -26,11 +26,24 @@
             android:fitsSystemWindows="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
-<!--        <activity-->
-<!--            android:name=".ui.activity.LoginActivity"-->
-<!--            android:launchMode="singleTask"-->
-<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.from.start.ui.activity.IPActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
 
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
+        <activity
+        android:name="com.from.start.ui.activity.WifiActivity"
+        android:windowSoftInputMode="adjustUnspecified|stateHidden"
+
+        android:fitsSystemWindows="true"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name="com.from.start.ui.activity.AboutActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
 
     </application>
 
