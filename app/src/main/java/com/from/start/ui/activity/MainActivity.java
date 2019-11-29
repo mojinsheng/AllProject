@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import com.from.start.R;
 import com.from.start.ui.fragment.MainFragment;
-import com.from.start.ui.fragment.MonitorFragment;
+import com.from.start.ui.fragment.AppFragment;
 import com.from.start.ui.fragment.PersonFragment;
 import com.from.start.ui.fragment.SettingFragment;
 import com.tbit.tbitblesdk.Bike.ResultCode;
@@ -120,8 +120,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.l_app:
                 //监控
-                fragment = new MonitorFragment();
-                tag = MonitorFragment.class.getSimpleName();
+                fragment = new AppFragment();
+                tag = AppFragment.class.getSimpleName();
                 startFragment(fragment,tag);
 
                 break;

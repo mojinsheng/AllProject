@@ -3,86 +3,85 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white">
+    android:layout_height="370dp"
+ >
 
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
-
-    <TextView
-        android:id="@+id/line"
-        android:layout_width="10dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/shape_textupdate_fill"
-        app:layout_constraintBottom_toTopOf="@+id/guideline1"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/text_ai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:gravity="center"
-        android:text="AI智能"
-        android:textColor="@color/color_appupdate"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/l_index"
-        app:layout_constraintStart_toEndOf="@+id/line"
-        app:layout_constraintTop_toTopOf="@+id/l_index" />
 
     <LinearLayout
-        android:id="@+id/l_my"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:id="@+id/ll_caidan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/text_ai"
-        app:layout_constraintStart_toEndOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/text_ai">
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
+            android:id="@+id/line"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_textupdate_fill" />
+
+        <TextView
+            android:id="@+id/text_ai"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
             android:gravity="center"
-            android:layout_marginTop="5dp"
-            android:text="更 多"
-            android:textColor="@color/color_more"
-            android:textSize="20sp" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_marginLeft="10dp"
+            android:text="AI智能"
+            android:textColor="@color/color_appupdate"
+            android:textSize="30sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@mipmap/home_up" />
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="更 多"
+                android:gravity="center"
+                android:textColor="@color/color_more"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/home_up" />
+
+        </LinearLayout>
+
     </LinearLayout>
-    <!-- 定义一个GridView组件 -->
-    <GridView
-        android:id="@+id/gridview"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/app_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:horizontalSpacing="1dp"
-        android:background="@drawable/shape_appupdate_fill"
-        android:verticalSpacing="1dp"
-        android:numColumns="4"
-        android:gravity="center"
+        android:scrollbars="vertical"
+        android:overScrollMode="never"
+
+        app:layout_constraintTop_toBottomOf="@+id/ll_caidan"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

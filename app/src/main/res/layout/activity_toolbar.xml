@@ -26,24 +26,25 @@
         <!--android:src="@mipmap/ic_back"/>-->
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_left"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:paddingBottom="8dp"
             android:paddingLeft="15dp"
             android:paddingTop="8dp"
-            android:src="@mipmap/ic_back"
+            android:src="@mipmap/home_title_left"
             app:civ_border_color="#E9E9E9"/>
 
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:layout_centerVertical="true"
+
             android:paddingLeft="10dp"
-            android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:layout_toRightOf="@+id/img_left"
+            android:textColor="@color/color_text_title"
+            android:textSize="25sp"/>
 
         <TextView
             android:id="@+id/tv_bar_right"
@@ -52,7 +53,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/color_text_title"
             android:visibility="gone"
             android:textSize="14sp"/>
     </RelativeLayout>

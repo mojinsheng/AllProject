@@ -4,4 +4,13 @@
     <string name="text_app">应用管理</string>
     <string name="text_setting">设置</string>
     <string name="text_my">我的</string>
+
+
+    <string name="text_conten">
+        此版本适用于Android3.0及以上固件，则在其他品牌或型号
+        的设备上使用本软件，对于出现的任何习题，腾讯公司不承担
+        仁何责仁，木软件的下载，女装完全免费，使用过程中产生的
+        数据流量费用，由运营商收取，本软件的安装用受《软件许可
+        及服务协议》约束.
+    </string>
 </resources>

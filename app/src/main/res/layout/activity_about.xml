@@ -74,18 +74,36 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/white"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toBottomOf="@+id/text_update"
         app:layout_constraintBottom_toTopOf="@+id/guideline10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="声明"
+                android:gravity="center"
+                android:textColor="@color/color_text_title"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
         <TextView
             android:id="@+id/text_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:lineSpacingExtra="15dp"
+            android:text="@string/text_conten"
             android:gravity="center"
-            android:textColor="@color/color_text_update"
-            android:textSize="30sp" />
+            android:textColor="@color/color_text_title"
+            android:textSize="24sp" />
 
     </LinearLayout>
     <TextView
