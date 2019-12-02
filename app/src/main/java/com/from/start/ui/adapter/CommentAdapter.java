@@ -11,21 +11,19 @@ import android.widget.TextView;
 import com.from.start.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.AppHolder> {
 
     private final LayoutInflater mLayoutInflater;
     private final Context mContext;
-    private final ArrayList<String> mData;
+    private  List<String> mDatas=new ArrayList<>();
 
-    public CommentAdapter(Context context) {
+    public CommentAdapter(Context context, List<String> _mDatas) {
         mLayoutInflater = LayoutInflater.from(context);
         mContext = context;
+        mDatas = _mDatas;
 
-        mData = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            mData.add("hello " + i);
-        }
     }
 
     @NonNull
@@ -41,7 +39,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.AppHolde
 
     @Override
     public int getItemCount() {
-        return mData.size();
+        return mDatas.size();
     }
 
     class AppHolder extends RecyclerView.ViewHolder {

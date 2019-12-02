@@ -11,11 +11,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.from.start.ui.activity.LoginActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden"
-            >
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -44,6 +44,39 @@
 
             android:fitsSystemWindows="true"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.from.start.ui.activity.SearchActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.from.start.ui.activity.MessageAppActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.from.start.ui.activity.SettingActicity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.from.start.ui.activity.PersonActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.from.start.ui.widget.RecyclerWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
 
     </application>
 

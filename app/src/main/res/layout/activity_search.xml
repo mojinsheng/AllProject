@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_seting">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+    <RelativeLayout
+        android:id="@+id/re_search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3">
+
+        <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/home_search" />
+
+
+        <EditText
+            android:id="@+id/et_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@null"
+            android:hint="应用搜索"
+            android:textColorHint="@color/color_text_title"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/color_title"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/l_lishi"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="@+id/re_search"
+    app:layout_constraintTop_toBottomOf="@+id/re_search"
+    app:layout_constraintEnd_toEndOf="@+id/re_search"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="历史记录"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_text_title" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_main"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:overScrollMode="never" />
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/l_searchapp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/re_search"
+        app:layout_constraintTop_toBottomOf="@+id/re_search"
+        app:layout_constraintEnd_toEndOf="@+id/re_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_app"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

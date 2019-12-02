@@ -17,11 +17,7 @@ import android.widget.Toast;
 
 import com.from.start.R;
 import com.from.start.ui.fragment.MainFragment;
-import com.from.start.ui.fragment.AppFragment;
-import com.from.start.ui.fragment.PersonFragment;
-import com.from.start.ui.fragment.SettingFragment;
-import com.tbit.tbitblesdk.Bike.ResultCode;
-import com.tbit.tbitblesdk.Bike.TbitBle;
+
 import com.xslong.xslonglib.base.BaseActivity;
 import com.xslong.xslonglib.base.BasePresenter;
 
@@ -103,10 +99,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (TbitBle.getBleConnectionState() == ResultCode.SUCCEED) {
-            TbitBle.disConnect();
-            TbitBle.destroy();
-        }
+
     }
 
     @Override
@@ -120,23 +113,23 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.l_app:
                 //监控
-                fragment = new AppFragment();
-                tag = AppFragment.class.getSimpleName();
-                startFragment(fragment,tag);
+                 startActivity(MessageAppActivity.class);
 
                 break;
             case R.id.l_setting:
-                fragment = new SettingFragment();
-                tag = SettingFragment.class.getSimpleName();
-                startFragment(fragment,tag);
+//                fragment = new SettingActicity();
+//                tag = SettingActicity.class.getSimpleName();
+//                startFragment(fragment,tag);
+                startActivity(SettingActicity.class);
 
                 //个人中心
                 break;
             case R.id.l_my:
-                fragment = new PersonFragment();
-                tag = PersonFragment.class.getSimpleName();
-                startFragment(fragment,tag);
-                //个人中心
+//                fragment = new PersonActivity();
+//                tag = PersonActivity.class.getSimpleName();
+//                startFragment(fragment,tag);
+//                //个人中心
+                startActivity(PersonActivity.class);
                 break;
         }
     }

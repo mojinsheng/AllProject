@@ -67,6 +67,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends RxAppCompatA
         }
         this.initView();
         mUnbinder = ButterKnife.bind(this);
+
         this.initData();
     }
 
